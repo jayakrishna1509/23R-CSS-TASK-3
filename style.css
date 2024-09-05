@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.float-left {
+  float: left;
+  margin: 10px;
+}
+
+.float-right {
+  float: right;
+  margin: 10px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  width: 80vw;
+  height: 94vh;
+  max-width: 1000px;
+  max-height: 800px;
+  border: 6px solid black;
+  box-sizing: border-box;
+  padding: 10px;
+  position: relative;
+}
+
+.main > div {
+  width: 200px;
+  height: 140px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid black;
+}
+
+.cd1 {
+  background-color: darkorange;
+  grid-column: 1;
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
+.cd2 {
+  background-color: green;
+  background-image: linear-gradient(blue, red, green);
+  grid-column: 1;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.cd3 {
+  background-color: purple;
+  grid-column: 1;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.cd4 {
+  background-image: linear-gradient(to left, red, green, blue, black);
+  grid-column: 3;
+  margin-top: -380px;
+  margin-right: 50px;
+}
+
+.cd5 {
+  background-color: lime;
+  grid-column: 3;
+  margin-top: -380px;
+  margin-right: 50px;
+}
+
+.cd6 {
+  background-color: orange;
+  background-image: repeating-linear-gradient(
+    red 30%,
+    yellow 40%,
+    aqua 20%,
+    blue 50%
+  );
+  grid-column: 3;
+  margin-top: -185px;
+  margin-right: 50px;
+}
+
+.heading {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: black;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
